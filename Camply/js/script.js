@@ -1,21 +1,21 @@
 $(document).ready(function () {
 
     // Gear Carousel
-    $('#gearCarousel').carousel({
+    $('#CamplyCarousel').carousel({
         interval: 5000
     });
 
     $('#carouselControl').click(function () {
 
         if ($('#carouselControl').hasClass('paused')) {
-            $('#gearCarousel').carousel('cycle');
+            $('#CamplyCarousel').carousel('cycle');
             $('#carouselControl').text('Pause');
         } else {
-            $('#gearCarousel').carousel('pause');
+            $('#CamplyCarousel').carousel('pause');
             $('#carouselControl').text('Play');
         }
 
         $('#carouselControl').toggleClass('paused');
     });
-    
+
 });

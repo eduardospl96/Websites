@@ -71,27 +71,46 @@ body {
   margin: 1% 0% 1% 0%;
 }
 
+/* --------------- CAROUSEL --------------- */
+
+.carousel-caption {
+  transform: translateY(-50%);
+  bottom: 0;
+  top: 60%;
+}
+
 .bg-carousel1 {
-  background-image: url('../assets/images/gear/carousel/kits.jpeg');
+  background-image: url('../assets/images/home/1.jpg');
 }
 
 .bg-carousel2 {
-  background-image: url('../assets/images/gear/carousel/gearwizard.jpg');
+  background-image: url('../assets/images/home/2.jpg');
 }
 
-.carousel-item {
-  height: 25vw;
+.bg-carousel3 {
+  background-image: url('../assets/images/home/3.jpg');
+}
+
+.bg-carousel1,
+.bg-carousel2,
+.bg-carousel3 {
+  height: calc(100vh - 56px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.carousel-caption {
-  transform: translateY(-50%);
-  bottom: 0;
-  top: 50%;
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    transform: translateY(-50%);
+    bottom: 0;
+    top: 50%;
+  }
+
 }
+
+/* --------------- HORIZONTAL SCROLL --------------- */
 
 .scrolling-wrapper {
   overflow-x: auto;
@@ -117,7 +136,8 @@ body.scrolling-wrapper {
   -ms-overflow-style: none;
 }
 
-/* ----------------- ANIMATIONS --------------- */
+/* --------------- ANIMATIONS --------------- */
+
 .firstanimation {
   opacity: 0;
   animation: appear .25s;
