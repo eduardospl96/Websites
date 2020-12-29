@@ -18,12 +18,17 @@ a:hover {
 }
 
 nav,
-h1 {
+h1,
+h2 {
   font-family: 'Neutraface2TextBold';
 }
 
 h3 {
   font-family: 'Neutraface2TextBold';
+  font-size: 20px;
+}
+
+.info {
   font-size: 20px;
 }
 
@@ -61,6 +66,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.text-space {
+  margin: 10% 10% 10% 10%;
 }
 
 .cover-space {
@@ -107,7 +116,6 @@ body {
     bottom: 0;
     top: 50%;
   }
-
 }
 
 /* --------------- HORIZONTAL SCROLL --------------- */
